@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title> Your Name-portfolio</title>
+        <style>
+            body{
+                font-family: Arial, sans-serif;
+                margin: 19px;
+                padding:0%;
+                background-color: lightpink;
+            }
+            header{
+                background-color: rgb(114, 8, 201);
+                color: rgb(212, 10, 134);
+                text-align: center;
+                padding:2rem 0;
+                position: relative;/*Add this*/
+            }
+            .header-content h1{
+                font-size: 2.8rem;
+            }
+            /*Add styles for the round profile picture*/
+            .profile-picture{
+                width: 150px;/*Adjust the size as needed*/
+                height: 150px;
+                border-radius: 75%;/*create a circular shape*/
+                object-fit:cover;/*To ensure the image fills the circular area*/
+                position: absolute;/*Add this*/
+                top: 38px;/*Adjust top position as needed*/
+                left: 78px;/*Adjust left position as needed*/
+            }
+
+            nav {
+                background-color:#333 ;
+                color: #fff;
+                text-align: center;
+            }
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+                margin: 0 20px;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #fff;
+            }
+
+            .section-content {
+                background-color: rgb(185, 8, 185);
+                padding: 2rem;
+                margin: 1rem;
+                border-radius: 20px;
+                box-sizing: 10px gray;
+            }
+            .download-button {
+                background-color: rgb(16, 13, 209);
+                color: aliceblue;
+                padding:0.5rem 1rem;
+                text-decoration: none;
+                border-radius: 20px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+
+            .download-button:hover {
+                background-color: #555;
+            }
+
+            footer {
+                text-align: center;
+                padding: 1rem 0;
+                background-color: rgb(185, 14, 185);
+                color: rgb(11, 197, 135);
+            }
+
+            ul{
+                list-style-type: disc;
+                padding-left: 20px;
+            }
+        </style>
+    </head>
+<body>
+    <header>
+        <div class="header-content">
+            <!--Add your profile picture here-->
+            <img src="Varshini.jpg" alt="your name-portfolio"class="profile-picture">
+            <h1>Varshini</h1>
+            <p>Education is most powerfull weapon to change the world</p>        
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <div class="section-content">
+            <h2>Adout Me</h2>
+            <p>Hello Everyone! I am Sritharani.E and I am studing as a computer science student</p>       
+         </div>
+    </section>
+    <section id="Education">
+        <div class="section-content">
+            <h2>B.SC</h2>
+            <p>Ganesar college of Arts and science-Melaisivapuri</p>
+        </div>
+    </section>
+    <section id="skills">
+        <div class="section-content">
+        <h2>skills</h2>
+        <ul>
+            <li>Java</li>
+            <li>Programming in C</li>
+            <li>Basic in HTML and CSS</li>
+            <li>Programming in C++</li>
+        </ul>
+    </section>
+    <section id="project">
+        <div class="section-content">
+            <h2>project</h2>
+            <ul>
+                <li><a href="file:///C:/Users/Mithra/document/html.tutorial/h.html">project 1</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="resume">
+        <center>
+            <div class="section-content">
+                <h2>Resume</h2>
+                <a href="varshini resume.png"class="download-button"></a>
+            </div>
+    </section>
+    <footer>
+        <p>&copy;2023 Varshini.S</p>
+    </footer>
+        </center>
+        <script>
+          //smooth scrolling to section when clicking on navigation links document.querySelectorAll('[href^="#"]').forEach(anchor=>{
+           anchor.addEventistener('click',function(e){e.preventDefault();
+          const targetId=this.getAttribute("href").substring(1);
+          const target Element=document.getElementById(trgetId);
+          if(targetElement){
+            window.scroolTo({
+                top:targetElement.offsetTop;
+                behavior:'smooth'
+            });
+          }    
+            });
+        });  
+        </script>
+</body>
+</html>
